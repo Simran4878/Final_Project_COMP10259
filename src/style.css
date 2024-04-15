@@ -1,0 +1,48 @@
+header h1{
+    text-align: center;
+    color: rgb(50, 50, 90);
+}
+body{
+    background-color: rgb(109, 164, 216);
+   
+}
+#img1{
+    width: 60%;
+    margin-left: 20%;
+
+}
+.img2{
+    width: 20%;
+   
+}
+#vd2{
+    margin-left: 10%;
+}
+#img4,#img{
+    width: 20%;
+}
+#img2{
+    width: 20%;
+}
+#img3{
+    width: 30%;
+    
+}
+
+
+.heading{
+    
+    margin-top: 4%;
+    letter-spacing: 7px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(70),
+    cursor .4s step-end infinite alternate;
+}
+@keyframes cursor{
+    100% { border-color: transparent;}
+}
+@keyframes typing{
+    from { width: 0}
+}

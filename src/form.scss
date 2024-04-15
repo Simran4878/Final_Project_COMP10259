@@ -1,0 +1,10 @@
+.Contaner{
+    border: dashed 5px rgb(224, 133, 133);
+}
+.bt{
+    background-color: red;
+}
+.bt::after{
+    content: " ";
+    text-transform: capitalize;
+}

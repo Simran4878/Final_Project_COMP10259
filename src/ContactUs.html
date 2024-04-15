@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="form.scss">
+    <script>
+        function validateForm() {
+            var fname = document.forms["contactForm"]["fname"].value;
+            var lname = document.forms["contactForm"]["lname"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var date = document.forms["contactForm"]["date"].value;
+            var phone = document.forms["contactForm"]["phone"].value;
+            var message = document.forms["contactForm"]["message"].value;
+
+            if (fname.length < 5 || lname.length < 5 || !email.includes('@') || date.length != 10 || phone.length != 10 || message.length < 50) {
+                alert("Please fill out the form correctly.");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-image: url(https://wallpapers.com/images/hd/astonishing-marine-life-tropical-desktop-1vv2ra1n6cn9ycx2.jpg);background-repeat: no-repeat;">
+    <div class="Contaner" style="background-color: white;">
+        <form name="contactForm" action="https://formspree.io/f/mrgnoleq" method="POST"
+            onsubmit="return validateForm()">
+            <h2 class="heading">Contact Us</h2>
+            <input type="text" name="fname" required placeholder="First Name"><br>
+            <input type="text" name="lname" required placeholder="Last Name"><br>
+            <input type="email" name="email" required placeholder="Email"><br>
+            <input type="date" name="date" required placeholder="E-mail" style="text-align: center;"><br>
+            <input type="number" name="phone" required placeholder="Phone No."><br>
+            <textarea name="message" required placeholder="Message" style="width: 300px; height: 80px;"></textarea><br>
+            <input type="submit" value="Submit" class="bt" style="::after{text-transform: lowercase;}">
+    </div>
+    </form>
+
+
+</body>
+
+</html>

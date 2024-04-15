@@ -1,0 +1,13 @@
+.list1 {
+  color: yellow;
+}
+.list1 a {
+  text-decoration: none;
+  color: yellow;
+  font-size: 25px;
+}
+.list1 a:hover{
+  color: white;
+  font-size: 35px;
+}
+/*# sourceMappingURL=Assignment3.css.map */
